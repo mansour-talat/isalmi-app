@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">islami</string>
+    <string name="quran">quran</string>
+    <string name="seb7a">seb7a</string>
+    <string name="book">book</string>
+    <string name="radio">radio</string>
+    <array name="Azkarlist">
+        <item>سبحان الله</item>
+        <item>الحمدلله </item>
+        <item>لا اله الا الله</item>
+        <item>الله أكبر</item>
+    </array>
+</resources>

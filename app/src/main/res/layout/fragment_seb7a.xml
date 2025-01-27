@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/seb7a_background">
+    <ImageView
+        android:id="@+id/mask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/mask"/>
+    <ImageView
+        android:id="@+id/seb7a_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mask"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:src="@drawable/sebhabody_1"
+        />
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/seb7a_body"
+        app:layout_constraintBottom_toBottomOf="@id/seb7a_body"
+        app:layout_constraintStart_toStartOf="@id/seb7a_body"
+        app:layout_constraintEnd_toEndOf="@id/seb7a_body"
+
+        >
+
+        <TextView
+            android:id="@+id/tazkir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="سبحان الله  "
+            android:textSize="35sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/janna_font"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/seb7a_counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="35"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
