@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    tools:background="@drawable/mainbackground">
+
+
+    <TextView
+        android:id="@+id/chapters_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/sorra_image_number"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="22" />
+
+    <TextView
+        android:id="@+id/En_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/verses_num"
+        app:layout_constraintStart_toEndOf="@id/chapters_number_tv"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="alfatiha" />
+
+    <TextView
+        android:id="@+id/verses_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/En_title"
+        app:layout_constraintTop_toBottomOf="@+id/En_title"
+        tools:text="7 verses" />
+    <TextView
+        android:id="@+id/Ar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:text="الفاتحه" />
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       android:background="@color/white"
+       app:layout_constraintBottom_toBottomOf="@id/verses_num"
+       android:layout_marginBottom="-12dp"
+       />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
